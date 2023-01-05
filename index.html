@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Alura ONE | Challenge #01 - Decodificador</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>Desafios propostos da <strong>Alura & Oracle Next Education</strong>:</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Challenge #01 - Decodificador</a></li>
+					</ul>
+				</nav>
+				<h2 id="main-title">Decodificador template:</h2>
+			</div>
+		</header>
+		<main>
+			<section>
+				<figure>
+					<img id="logo" src="logo.png" alt="Logomarca vetorizada da Alura">
+				</figure>
+				<textarea cols="90" rows="10" id="text-decodered" required placeholder="Digite seu texto"></textarea>
+				<div id="alert-box">
+					<img src="attention.svg" alt="Atenção">
+					<p id="alert-mesage">Apenas letras minúsculas e sem acento.</p>
+				</div>
+				<div id="btn-box">
+					<button id="encrypt-button">Criptografar</button>
+					<button id="decrypt-button">Descriptografar</button>
+				</div>
+				<section class="rectangle-frame">
+					<div id="initial">
+						<img id="decoder-person" src="decoder_person.svg" alt="Imagem vetorizada de pessoa inspecionando diamante com a lupa.">
+						<p id="not-found-mesage"><strong>Nenhuma mensagem encontrada</strong></p>
+						<p id="text-mesage"><em>Digite um texto que você deseja criptografar ou descriptografar.</em></p>
+					</div>
+					<div id="result">
+						<p id="text-output">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas. </p>
+						<button id="copy-button">Copiar</button>
+					</div>
+				</section>
+			</section>
+			<script>
+				var initialDisplay = document.getElementById("initial");
+				var resultDisplay = document.getElementById("result");
+
+				initialDisplay.style.display = none;
+			</script>
+		</main>
+		<footer>
+			<p class="copyright">&#19956; Developed by Leandro Miguel - 2022</p>
+			<p class="links">GIT | LINKEDIN | WHATSAPP</p>
+		</footer>
+	</body>
+</html>
